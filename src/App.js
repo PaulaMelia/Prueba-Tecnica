@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
 
+import Home from '../src/components/Home';
+
+//crear array objetos
 function App() {
+  const arrayPerson = [
+  {id: 1, name: 'Paula', years: 29 },
+  {id: 1, name: 'Paula', years: 29 },
+  {id: 1, name: 'Paula', years: 29 },
+
+];
+//crear componente y que salga hola
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Home dadas={arrayPerson}/>
+      
     </div>
   );
 }
